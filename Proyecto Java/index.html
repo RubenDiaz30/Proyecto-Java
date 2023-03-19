@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>Home</title>
     </head>
 
@@ -13,46 +14,154 @@
             margin: 0px;
             box-sizing: border-box;
             top: 0px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
     </style>
 
-    <body>
+    <body class="w-full bg-[#3d9970] flex flex-col gap-1.5">
         <script>AOS.init();</script>
 
-        <section>
+        <header class="text-[#DCDCDC] bg-[#282634] text-[20px] grid grid-cols-5">
 
     <!--Navegador-->
 
-            <div>
 
-                <nav>
+    <!--Logo-->
 
-                    <p>Menú</p>
-                    <p>Contacto</p>
-                    <p>Trabajos</p>
+                <a class="" href="">
+                    <img class="h-[60px] w-[150px]" src="./Imágenes/png/logo-no-background.png" alt="Logo">
+                </a>
 
-                </nav>
+    <!--Datos-->
 
-            </div>
-    
-    <!--Nombre-->
+                
+                <div>
+                    <a class="text-center text-start" href=""><p class="mt-3">Contacto</p></a>
+                </div>
 
-            <div>
+                <div>
+                    <a class="text-center text-start" href=""><p class="mt-3">Trabajos</p></a>
+                </div>
 
-            </div>
+                <div>
+                    <a class="text-center text-start" href=""><p class="mt-3">RRSS</p></a>
+                </div>
+
+                
+
+            <!--</div>
 
     <!--Reloj-->
 
-            <div>
+            <div class="text-center text-[#3D9970] py-3 flex justify-end pr-6">
+
+                <p class="border-2 w-[100px]" id="Reloj"> </p>
+                <p id="Reloj"> </p>
+
+            </div>
+
+        </header>
+    
+    <!--Acerca de mí-->
+
+        <section class="text-[#DCDCDC] bg-[#282634] grid grid-cols-[30%_70%] h-[500px] bg-[url('./Imágenes/F1.1.jpe')] bg-cover">
+
+            <div class="h-[600px] w-[30vw] flex flex-col my-10">
+
+                <div class="h-[200px] flex flex-col items-center ">
+                    <img class="w-[100px] h-[100px] mr-0 " src="./Imágenes/gear.png" alt="">
+                    <p class="text-center text-[40px]">Ingeniero Mecánico</p>
+                </div>
+
+                <div class="h-[200px] flex flex-col items-center ">
+                    <img class="w-[100px] h-[100px]" src="./Imágenes/browser.png" alt="">
+                    <p class="text-center text-[40px]">Estudiante de Desarrollo Web</p>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center items-center h-[500px]">
+
+                <img class="w-[800px] h-[400px] " src="./Imágenes/FotoPrincipal.jpg" alt="">
 
             </div>
 
         </section>
-
-
     
+        <section class="bg-[#282634] text-black grid grid-cols-3 justify-evenly gap-1 h-[500px] bg-[url('./Imágenes/F2.1.jpe')] bg-cover">
+
+    <!--Bio-->
+
+    <div class="text-center h-[300px] my-[80px] flex flex-col justify-center items-center">
+
+        <img class="h-[100px] w-[100px]" src="./Imágenes/settings.png" alt="">
+
+        <p class="w-[200px] bg-[#DCDCDC] bg-cover rounded-lg h-[100vh] leading-8 text-[18px] px-2">
+            Ingeniero mecánico con 8 años de experiencia
+            en Venezuela, Ecuador y Chile, 
+            especializado en sistemas de refrigeración.
+        </p>
+
+    </div>
+
+    <div class="text-center h-[300px] my-[80px] flex flex-col justify-center items-center">
+
+        <img class="h-[100px] w-[100px]" src="./Imágenes/communication.png" alt="">
+        
+        <p class="w-[200px] bg-[#DCDCDC] bg-cover rounded-lg h-[100vh] leading-8 text-[18px] px-2">
+            Actualmente trabajo como técnico en
+            telecomunicaciones desde hace casi 2 años
+            en Santiago de Chile, y hoy en día también
+            soy un estudiante de Desarrollo Web.
+        </p>
+
+    </div>
+
+
+    <div class="text-center h-[300px] my-[80px] flex flex-col justify-center items-center">
+        <img class="h-[100px] w-[100px]" src="./Imágenes/html-file.png" alt="">
+        
+        <p class="w-[200px] bg-[#DCDCDC] bg-cover rounded-lg h-[100vh] leading-8 text-[18px] px-2">
+            Buscando
+            centrarme bien sea en el front-end, back-end o
+            ambos con la meta de lograr un balance entre
+            una codificación amigable y un diseño atractivo.
+        </p>
+    </div>
+
+        </section>
         
     </body>
+
+    <footer class="bg-[#282634] text-[#DCDCDC] text-[20px] grid grid-cols-4 grid-flow-row gap-1 place-content-center">
+
+        <!--Navegador-->
+
+            <!--<div class="flex justify-start h-[120px]">
+
+    <!--Logo-->
+
+    <a class="" href="">
+        <img class="h-[60px] w-[60px]" src="./Imágenes/ruben-diaz-website-favicon-color.png" alt="Logo">
+    </a>
+
+<!--Datos-->
+
+    
+    <div>
+        <a class="text-start" href=""><p class="mt-3">Contacto</p></a>
+    </div>
+
+    <div>
+        <a class="text-start" href=""><p class="mt-3">RRSS</p></a>
+    </div>
+
+    <div>
+        <p class="mt-3">Copyrights</p>
+    </div>
+
+    </footer>
+    <script src="./Reloj.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
 
