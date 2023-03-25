@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Pagina</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">
+                <p>Inicio</p>
+            </a>
+        </nav>
+
+        <!--Parrafos-->
+        <p>Hola Mundo</p>
+        <p>Mi nombre es Diego</p>
+        <p>Esta es mi primera pagina web</p>
+
+        <!-- Imagen por URL (USANDO CDN)-->
+        <img src="https://img.freepik.com/foto-gratis/lindo-perrito-haciendose-pasar-persona-negocios_23-2148985938.jpg" alt="Perrito">
+        <!--Imagen desde carpeta Local-->
+        <img src="./Imagenes/perrito.webp" alt="Perrito2">
+        
+        <!-- Titulos -->
+        <h1>Titulo h1</h1>
+        <br><!-- Salto de linea: br significa Break -->
+        <h2>Titulo h2</h2>
+        <h3>Titulo h3</h3>
+
+        <!-- Botones -->
+        <button>Esto es un boton</button>
+
+        <!-- Anchor / Ancla -->
+        <a href="https://google.com" target="_blank">Ancla</a>
+
+        <!-- Boton con ancla -->
+        <button>
+            <a href="https://google.com">Visitame</a>
+        </button>
+
+        <!-- Titulo con ancla -->
+        <a href="https://youtube.com" target="_blank">
+            <h1>Esto es un ancla</h1>
+        </a>
+
+        <!-- Listas -->
+        <!--Lista Organizada-->
+        <ol>
+            <!--Elemento de lista-->
+            <li>Estudiar HTML</li>
+            <li>Practicar HTML</li>
+            <li>Repetir</li>
+            <li>Estudiar HTML</li>
+            <li>Practicar HTML</li>
+            <li>Repetir</li>
+            <li>Estudiar HTML</li>
+            <li>Practicar HTML</li>
+            <li>Repetir</li>
+            <li>Estudiar HTML</li>
+            <li>Practicar HTML</li>
+            <li>Repetir</li>
+        </ol>
+
+        <!--Lista NO Organizada-->
+        <ul>
+            <!--Elemento de lista-->
+            <li>Necesito Aprender HTML</li>
+            <li>Necesito Practicar HTML</li>
+            <li>Necesito Repetir</li>
+            <li>Necesito Aprender HTML</li>
+            <li>Necesito Practicar HTML</li>
+            <li>Necesito Repetir</li>
+            <li>Necesito Aprender HTML</li>
+            <li>Necesito Practicar HTML</li>
+            <li>Necesito Repetir</li>
+            <li>Necesito Aprender HTML</li>
+            <li>Necesito Practicar HTML</li>
+            <li>Necesito Repetir</li>
+        </ul>
+
+        <!--Tipos de Inputs-->
+
+        <!--Input de Texto-->
+        <input type="text" placeholder="Usuario">
+        <br>
+        <!--input de Password-->
+        <input type="password" placeholder="Contraseña">
+
+        <!--Input de Color-->
+        <input type="color">
+
+        <!--Input de Fecha-->
+        <input type="date">
+
+        <!--Inputa de Email-->
+        <input type="email" placeholder="Email">
+
+        <!--Input de archivo-->
+        <input type="file">
+
+        <!--Input Checkbox-->
+        <input type="checkbox">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus consectetur aperiam optio, commodi asperiores. Atque ratione cupiditate, doloremque quia, ipsum recusandae alias inventore, fugit corporis reiciendis reprehenderit? Repellat, vero?</p>
+
+
+        <!--Iframe´s-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8Bh8Xn6W-BE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="./prueba.txt"></iframe>
+
+        <!--Videos desde carpeta local-->
+        <video width="500px" controls>
+            <source id="video1" src="./mivideo.mp4">
+        </video>
+
+        <!-- la etiqueta video no permite cargar videos mediante enlaces-->
+        <video controls>
+            <source src="https://www.youtube.com/embed/8Bh8Xn6W-BE">
+        </video>
+
+        <!--Span: Permite encerrar una seleccion en unparrafo o titulo-->
+        <p>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing <span>Seleccion</span> elit. Ipsam <span>asperiores</span> esse ipsa minima</p>
+        <h1>Los videos <span>mas</span> asombrosos</h1>
+        
+    </body>
+    <footer>
+        Pie de pagina
+    </footer>
+</html>

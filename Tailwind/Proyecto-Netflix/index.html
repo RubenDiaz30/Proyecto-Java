@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./imagenesNetflix/icono.ico">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Netflix - Diego</title>
+    </head>
+    <body class="flex flex-col w-full">
+        <style>
+            *{
+                box-sizing: border-box; 
+                margin: 0px; 
+                top: 0px;
+            }
+        </style>
+        <!--Caja con fondo-->
+        <section class="bg-[url('./imagenesNetflix/fondo.jpg')] w-[100%] bg-cover h-[100vh]">
+            <!--Caja con Gradiente-->
+            <div class="flex flex-col w-[100%] h-[100%] justify-around bg-gradient-to-b from-black/90 via-black/25 to-black/90">
+                <!--Barra de Navegacion-->
+                <nav class="flex justify-between px-[55px]">
+                    <!--Logo-->
+                    <img class="w-[133px] h-[44px]" src="./imagenesNetflix/Logonetflix.png" alt="LOGO NETFLIX">
+                    <!--Lista y boton de Inicio-->
+                    <div class="flex gap-4">
+                        <select class="h-[35px] w-[90px] px-[4px] rounded-[3px] bg-transparent text-white border-[1px] border-white border-solid" name="Idioma">
+                            <option class="bg-stone-400 text-[13px] text-white" value="Español">Español</option>
+                            <option class="bg-stone-400 text-[13px] text-white" value="Ingles">Ingles</option>
+                        </select>
+                        <a href="https://www.netflix.com/login">
+                            <button class="text-white rounded px-[16px] py-[6px] bg-red-600 hover:bg-red-700">Iniciar sesión</button>
+                        </a>
+                    </div>
+                </nav>
+                <!--Contenido principal inicio-->
+                <main class="flex flex-col w-[100%] h-[450px] justify-center items-center gap-4 mt-[90px]">
+                    <!--Titulo, subtitulo y Parrafo-->
+                    <h1 class="font-['roboto'] text-white font-[900] text-[50px] w-[620px] leading-[55px] text-center">Películas y series ilimitadas y mucho más</h1>
+                    <p class="font-['roboto'] text-white font-[500] text-[28px]">Disfruta donde quieras. Cancela cuando quieras.</p>
+                    <p class="font-['roboto'] text-white text-[19px]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+                    <!--Input y Boton-->
+                    <div class="flex">
+                        <input class="pl-4 w-[500px] h-[60px] text-lg" type="text" placeholder="Email">
+                        <a class="bg-red-600 text-white text-center text-3xl w-[190px] h-[60px] pt-[8px]" href="">
+                            <button>Comenzar  ></button>
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!--Seccion 2-->
+        <section class="bg-[#010100] w-[100%] h-[470px] grid grid-cols-2">
+            <div class=" ml-[50px] h-[440px] flex flex-col justify-center col-span-1">
+                <h1 class="text-white text-[50px] font-[700]">Disfruta en tu TV</h1>
+                <p class="leading-[30px] text-white text-[28px]">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+            </div>
+            <div class="col-span-1">
+                <img src="./imagenesNetflix/download1.png" alt="">
+                <iframe src="./imagenesNetflix/video1.m4v" frameborder="0"></iframe>
+            </div>
+        </section>
+        <!--Pendiente-->
+        <section class="bg-sky-700 w-[100%] h-[470px]"> Section #3</section>
+        <section class="bg-sky-800 w-[100%] h-[470px]"> Section #4</section>
+        <section class="bg-sky-900 w-[100%] h-[470px]"> Section #5</section>
+        <section class="bg-stone-800 w-[100%] h-[470px]"> Section #6</section>
+        <footer class="bg-sky-800 w-[100%] h-[400px]">Algo</footer>
+    </body>
+</html>
