@@ -18,7 +18,7 @@
         }
     </style>
 
-<body class="w-full bg-[#3d9970] flex flex-col gap-1.5">
+<body class="w-full bg-[#3d9970] flex flex-col">
     <script>AOS.init();</script>
 
     <header class="text-[#DCDCDC] bg-[#282634] text-[20px] grid grid-cols-5">
@@ -62,11 +62,11 @@
 
     </header>
 
-    <section>
+    <section class="grid grid-cols-[30%_60%_10%] gap-4 h-[449px] bg-[#CDCDCD] bg-gradient-to-b from-[#282634] via-[#282634]/70 to-[#282634]">
 
     <!--Formulario-->
 
-        <div class="flex justify-center">
+        <div class="text-[#DCDCDC] pl-24 my-16">
 
             <form class="" action="../Proyecto Java/contacto.html">
 
@@ -86,11 +86,38 @@
                 <input type="email" placeholder="Email" required>
 
                 <br>
-                
-                <input type="submit" value="Enviar">
+                <br>
+                <a href="">
+                    <button class="text-[#7Fdbff] rounded bg-[#282634] hover:bg-gray-700 h-[35px] w-[130px]">
+                        Enviar</button>
+                </a>
 
             </form>
 
+        </div>
+
+        <!--Imagen-->
+
+        <div class="h-[450px] w-[70%] ml-16">
+            <img class="h-[450px] w-[100%]" src="./Imágenes/img_contactos.png" alt="">
+        </div>
+
+
+        <!--RRSS-->
+
+        <div class="text-white flex flex-col my-6 items-end pr-16 justify-evenly gap-1">
+
+            <!--Github-->
+            <img class="h-[50px] w-[50px]" src="./Imágenes/github.png" alt="">
+
+            <!--LinkedIn-->
+            <img class="h-[50px] w-[50px]" src="./Imágenes/linkedin.png" alt="">
+
+            <!--Whatsapp-->
+            <img class="h-[50px] w-[50px]" src="./Imágenes/whatsapp.png" alt="">
+
+            <!--Instagram-->
+            <img class="h-[50px] w-[50px]" src="./Imágenes/instagram.png" alt="">
 
         </div>
 

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Netflix</title>
+    </head>
+
+        <style>
+            *{
+                margin: 0px;
+                box-sizing: border-box;
+                top: 0px;
+            }
+        </style>
+
+<body class="w-full bg-[#222222] flex flex-col gap-2">
+
+    <section class="bg-cover w-[100%] h-[100vh] bg-[url('./Imágenes/FondoPrincipal.jpg')]">
+
+        <div class="flex flex-col w-[100%] h-[100%] bg-gradient-to-b from-black/90 via-black/25 to-black/90">
+
+            <!--Encabezado-->
+            
+                    <nav class="flex mt-6">
+            
+                <!--Logo Netflix-->
+            
+                        <div class="w-[150px] h-[80px] ml-10">
+                            <img class="" src="./Imágenes/Logonetflix.png.webp" alt="Logo">
+                        </div>
+            
+                <!--Idioma e Inicio de sesión-->
+                        <div class="text-white w-[80vw] flex gap-8 justify-end">
+            
+                            <!--Idioma-->
+
+                            <img class="h-[25px] w-[28px] mt-1.5" src="./Imágenes/Mundo.png" alt="Idioma">
+
+                            <div class="border-white">
+                                
+                                <select class="w-[90px] h-[35px] bg-black text-white rounded border-white">
+                                    <option>Español</option>
+                                    <option>Inglés</option>
+                                </select>
+                            </div>
+                            <!--Inicio de sesión-->
+            
+                            <div>
+                                <a href="https://www.netflix.com/login">
+                                    <button class="text-white rounded bg-[#E50914] hover:bg-red-700 h-[35px] w-[130px]">
+                                        Iniciar sesión</button>
+                                </a>
+                            </div>
+            
+                        </div>
+            
+                    </nav>
+            
+                <!--Pantalla principal-->
+            
+                    <main class="text-white flex flex-col items-center justify-center w-[100%] mt-[120px]">
+                        <p class="text-[50px] w-[620px] font-semibold text-center leading-tight">
+                            Películas y series ilimitadas y mucho más</p>
+                        <p class="w-[720px] text-[28px] font-normal text-center leading-loose">
+                            Disfruta donde quieras. Cancela cuando quieras.</p>
+                        <p class="w-[920px] text-[20px] text-center leading-loose">
+                            ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+                        
+                        <!--Correo-->
+
+                        <div class="flex">
+                            <input type="text" placeholder="Email" class="h-[60px] w-[450px] mt-4">
+                            <a href=""><button class="rounded mt-4 bg-[#E50914] hover:bg-red-700 h-[60px] w-[200px] text-center text-[25px]">
+                                Comenzar ></button></a>
+                        </div>
+                    </main>
+
+        </div>
+
+    </section>
+
+<!--Pantalla TV-->
+
+    <section class="flex items-center bg-black h-[470px]">
+        
+        <!--Texto TV-->
+        
+        <div class="text-white pl-[70px]">
+            <p class="text-[50px] w-[620px] font-semibold text-left leading-loose">
+                Disfruta en tu TV</p>
+            <p class="text-[30px] w-[600px] font-normal text-left leading-tight">
+                Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+        </div>
+
+        <!--Imagen de video TV-->
+
+        <div class="block pt-[200px] items-center h-[660px] w-[90vw]">
+            <img class="block absolute mt-[600px] w-[530px] h-[400px] z-10" src="./Imágenes/TV.png" alt="TV">
+
+            <!--Video-->
+
+                <video class="block relative w-[400px] h-[230px] ml-[70px]" src="./Imágenes/VideoTV.m4v" autoplay="" playsinline="" muted="" loop="">
+
+                </video>
+        </div>
+
+    </section>
+
+<!--Offline-->
+
+    <section class="flex items-center bg-black h-[470px]">
+
+        <!--Teléfono-->
+
+        <div class="flex flex-col items-center">
+
+            <!--Imagen principal-->
+
+            <img class="w-[505px] h-[379px] relative z-0" src="./Imágenes/mobile-0819.jpg" alt="Teléfono">
+
+            <!--Barra inferior-->
+        
+            <div class="flex w-[330px] h-[100px] absolute justify-center items-center bg-black border-2 border-[#404040] rounded-xl mb-[50px] mt-[1350px] z-10">
+                <img class="w-[51px] h-[72px]" src="./Imágenes/boxshot.png" alt="Portada">
+                <div class="text-white flex flex-col mr-[100px] ml-[20px]">
+                    <p>Stranger Things</p>
+                    <p class="text-[#0071DC]">Descargando...</p>
+                </div>
+                <img class="w-[22px] h-[45px]" src="./Imágenes/Descargado.png" alt="Descargado">
+            </div>
+        </div>
+
+        <!--Texto teléfono-->
+
+        <div class="text-white pl-[70px] ml-[60px]">
+            <p class="text-[50px] w-[450px] font-semibold text-left leading-tight">
+                Descarga tus series para verlas offline</p>
+            <p class="text-[30px] w-[600px] font-normal text-left leading-tight pt-4">
+                Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
+        </div>
+
+    </section>
+
+<!--Pantallas-->
+
+    <section class="flex items-center bg-black h-[470px]">
+
+                <!--Texto pantallas-->
+
+                <div class="text-white ml-[110px] mt-[15px]">
+                    <p class="text-[50px] w-[550px] font-semibold text-left leading-tight">Disfruta donde quieras</p>
+                    <p class="text-[25px] w-[500px] font-normal text-left leading-tight mt-6">
+                        Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional.</p>
+                </div>
+        
+                <!--Pantallas-->
+        
+                <div class="pt-[200px] items-center h-[660px] w-[90vw]">
+                    <img class="block absolute mt-[1530px] w-[555px] h-[417px] z-10" src="./Imágenes/device-pile.png" alt="Pantallas">
+                    
+                    <!--Video-->
+
+                    <video class="inline-block relative w-[337px] h-[196px] ml-[105px] mt-[-45px]" src="./Imágenes/VideoDevice.m4v" autoplay="" playsinline="" muted="" loop=""></video>
+                </div>
+
+    </section>
+
+<!--Perfiles niños-->
+
+    <section class="flex justify-center items-center bg-black h-[470px]">
+
+                <!--Imagen niños-->
+
+                <div class="">
+                    <img class="w-[505px] h-[379px]" src="./Imágenes/Kids.png" alt="">
+                </div>
+        
+                <!--Texto niños-->
+        
+                <div class="text-white">
+                    <p class="text-[50px] w-[450px] font-semibold text-left leading-tight">Crea perfiles para niños</p>
+                    <p class="text-[30px] w-[590px] mt-4 font-normal text-left leading-tight">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, 
+                    sin costo con tu membresía.</p>
+                </div>
+
+    </section>
+
+<!--Preguntas frecuentes-->
+
+    <section class="block h-[890px] flex flex-col items-center text-white bg-black pb-[50px]">
+
+        <!--Título-->
+        <p class="ml-[20px] mb-[50px] mt-[50px] text-[50px] w-[500px] font-semibold text-left leading-tight">Preguntas Frecuentes</p>
+
+        <!--Preguntas-->
+
+        <div class="flex flex-col items-center gap-[10px]">
+            
+            <div class="w-[815px] h-[70px] bg-[#303030] text-left font-normal text-[27px]">
+                <button class="w-[100%] h-[100%] items-center flex justify-between px-[30px]">
+                    <p class="">¿Qué es Netflix? <span class="ml-[530px]">+</span></p>
+                </button>
+            </div>
+
+            <div class="w-[815px] h-[70px] bg-[#303030] text-left font-normal text-[27px]">
+                <button class="w-[100%] h-[100%] items-center flex justify-between px-[30px]">
+                    <p class="">¿Cuánto cuesta Netflix? <span class="ml-[443px]">+</span></p>
+                </button>
+            </div>
+
+            <div class="w-[815px] h-[70px] bg-[#303030] text-left font-normal text-[27px]">
+                <button class="w-[100%] h-[100%] items-center flex justify-between gap-10 px-[30px]">
+                    <p class="">¿Dónde puedo ver Netflix? <span class="ml-[405px]">+</span></p>
+                </button>
+            </div>
+
+            <div class="w-[815px] h-[70px] bg-[#303030] text-left font-normal text-[27px]">
+                <button class="w-[100%] h-[100%] items-center flex justify-between gap-10 px-[30px]">
+                    <p class="">¿Cómo cancelo? <span class="ml-[528px]">+</span></p>
+                </button>
+            </div>
+
+            <div class="w-[815px] h-[70px] bg-[#303030] text-left font-normal text-[27px]">
+                <button class="w-[100%] h-[100%] items-center flex justify-between gap-10 px-[30px]">
+                    <p class="">¿Qué puedo ver en Netflix? <span class="ml-[397px]">+</span></p>
+                </button>
+            </div>
+
+            <div class="w-[815px] h-[70px] bg-[#303030] text-left font-normal text-[27px]">
+                <button class="w-[100%] h-[100%] items-center flex justify-between gap-10 px-[30px]">
+                    <p class="">¿Es bueno Netflix para los niños? <span class="ml-[328px]">+</span></p>
+                </button>
+            </div>
+
+            
+        </div>
+
+        <div class="text-white flex flex-col items-center justify-center w-[100%] mt-[50px]">
+            <p class="w-[920px] text-[20px] text-center leading-loose">
+                ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+            
+            <!--Correo-->
+
+            <div class="flex">
+                <input type="text" placeholder="Email" class="h-[60px] w-[450px] mt-4">
+                <a href=""><button class="rounded mt-4 bg-[#E50914] hover:bg-red-700 h-[60px] w-[200px] text-center text-[25px]">
+                    Comenzar ></button></a>
+            </div>
+        </div>
+    </section>
+
+<!--Información-->
+
+    <section class="h-[400px] flex flex-col text-[rgb(73,73,73)] bg-black">
+
+        <!--Preguntas-->
+
+        <div class="mt-[80px] pb-[20px] ml-[200px]">
+            <p class="text-lg w-[620px] font-semibold text-left leading-loose">¿Preguntas? Llama al 800 914 143</p>
+        </div>
+
+        <!--Elementos-->
+
+        <div class="flex grid grid-cols-4 leading-loose pb-[20px] ml-[200px]">
+            <a href="https://help.netflix.com/en/node/412">
+                <p>Preguntas frecuentes</p> 
+            </a>
+
+            <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">
+                <p>Relaciones con inversionistas</p>
+            </a>
+
+            <a href="https://help.netflix.com/es/legal/termsofuse">
+                <p>Términos de uso</p>
+            </a>
+
+            <a href="https://help.netflix.com/en/contactus">
+                <p>Contáctanos</p>
+            </a>
+
+            <a href="https://help.netflix.com/es/">
+                <p>Centro de ayuda</p>
+            </a>
+
+            <a href="https://jobs.netflix.com/">
+                <p>Empleo</p>
+            </a>
+
+            <a href="https://help.netflix.com/es/legal/privacy">
+                <p>Privacidad</p>
+            </a>
+
+            <a href="https://fast.com/">
+                <p>Prueba de velocidad</p>
+            </a>
+
+            <a href="https://www.netflix.com/cl-en/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">
+                <p>Cuenta</p>
+            </a>
+
+            <a href="https://www.netflix.com/cl/redeem">
+                <p>Canjear tarjetas de regalo</p>
+            </a>
+
+            <a href="">
+                <p>Preferencias de cookies</p>
+            </a>
+
+            <a href="https://help.netflix.com/es/legal/notices">
+                <p>Avisos legales</p>
+            </a>
+
+            <a href="https://media.netflix.com/es/">
+                <p>Prensa</p>
+            </a>
+
+            <a href="https://devices.netflix.com/en/">
+                <p>Formas de ver</p>
+            </a>
+
+            <a href="https://help.netflix.com/es/legal/corpinfo">
+                <p>Información corporativa</p>
+            </a>
+
+            <a href="https://www.netflix.com/cl/browse/genre/839338">
+                <p>Solo en Netflix</p>
+            </a>
+        </div>
+
+        <!--Idioma-->
+
+        <div class="text-white w-[150px] h-[50px] ml-[200px] flex gap-4 my-1 border-white border-[1px] rounded">
+
+            <img class="h-[25px] w-[25px] mt-1.5 ml-[10px]" src="./Imágenes/Mundo.png" alt="Idioma">
+    
+            <div class="border-white">
+                
+                <select class="w-[90px] h-[35px] bg-black text-white rounded border-white">
+                    <option>Español</option>
+                    <option>Inglés</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="h-[80px] bg-black">
+            <p class="mt-4 mb-6 ml-[200px]">Netflix Chile</p>
+        </div>
+    </section>
+
+</body>
+</html>
